@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原产地证申报使用说明</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+
+        /* 页面布局 */
+        body {
+            background-color: #f5f7fa;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 说明容器 */
+        .guide-container {
+            width: 100%;
+            max-width: 800px;
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 20px;
+        }
+
+        /* 说明文字 */
+        .guide-text {
+            font-size: 18px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 指引图片 */
+        .guide-img {
+            width: 100%;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto 30px;
+            border: 1px solid #eee;
+            border-radius: 8px;
+        }
+
+        /* 按钮通用样式 */
+        .jump-btn,
+        .back-btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin: 0 10px;
+            /* 按钮间间距 */
+        }
+
+        /* 申报按钮样式 */
+        .jump-btn {
+            background-color: #2f54eb;
+            color: white;
+        }
+
+        .jump-btn:hover {
+            background-color: #1d39c4;
+        }
+
+        /* 返回按钮样式（区分但统一） */
+        .back-btn {
+            background-color: #f5f7fa;
+            color: #2f54eb;
+            border: 1px solid #2f54eb;
+        }
+
+        .back-btn:hover {
+            background-color: #e8edff;
+        }
+
+        /* 按钮容器（居中+换行适配） */
+        .btn-container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="guide-container">
+        <!-- 使用说明文字 -->
+        <p class="guide-text">请按下图指引，找到原产地证-海关原产地证书，并进行法人账号登陆</p>
+        <!-- 指引图片 -->
+        <img src="guide.jpg" alt="原产地证申报指引" class="guide-img">
+        <!-- 按钮容器（含返回+申报按钮） -->
+        <div class="btn-container">
+            <!-- 返回首页按钮（跳回index.html） -->
+            <a href="index.html" class="back-btn" target="_self">返回首页</a>
+            <!-- 原申报跳转按钮 -->
+            <a href="https://www.singlewindow.cn/#/standardEdition" class="jump-btn" target="_blank">前往原产地证申报页面</a>
+        </div>
+    </div>
+</body>
+
+</html>

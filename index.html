@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原产地证书服务平台</title>
+    <style>
+        /* 全局样式重置 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+
+        /* 页面背景 */
+        body {
+            background-color: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 主容器 */
+        .container {
+            width: 100%;
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* 模块按钮样式 */
+        .module-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        /* 悬浮效果 */
+        .module-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+        }
+
+        /* 图标样式 */
+        .module-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            color: #2f54eb;
+        }
+
+        /* 文字样式 */
+        .module-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .module-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        /* 跳转按钮 */
+        .jump-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #2f54eb;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+
+        .jump-btn:hover {
+            background-color: #1d39c4;
+        }
+
+        /* 小程序提示模块 */
+        .mini-program-card {
+            background: #f8f9fa;
+            border: 1px dashed #ddd;
+        }
+
+        .mini-program-card .module-icon {
+            color: #07c160;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 模块1：原产地证书样本 -->
+        <div class="module-card">
+            <div class="module-icon">📄</div>
+            <div class="module-title">原产地证书样本</div>
+            <div class="module-desc">查看RCEP等原产地证书标准样本</div>
+            <a href="https://alyg.nbytg.com/alyg_jg/index.html#/RCEP/info?Id=f6f25a78-1080-4aee-b317-a3a702993db0&GroupName=%E5%8A%9E%E4%BA%8B%E6%B5%81%E7%A8%8B"
+                class="jump-btn" target="_blank">立即查看</a>
+        </div>
+
+        <!-- 模块2：自贸协定税率查询 -->
+        <div class="module-card">
+            <div class="module-icon">📊</div>
+            <div class="module-title">自贸协定税率查询</div>
+            <div class="module-desc">查询各类自贸协定项下商品税率</div>
+            <a href="https://ftatax.mofcom.gov.cn/wmsw/tariffSearch" class="jump-btn" target="_blank">立即查询</a>
+        </div>
+
+        <!-- 模块3：原产地证书申报入口 -->
+        <div class="module-card">
+            <div class="module-icon">✍️</div>
+            <div class="module-title">原产地证书申报入口</div>
+            <div class="module-desc">单一窗口原产地证书在线申报</div>
+            <a href="https://www.singlewindow.cn/#/standardEdition" class="jump-btn" target="_blank">立即申报</a>
+        </div>
+
+        <!-- 模块4：小程序跳转（修改为链接） -->
+        <div class="module-card mini-program-card">
+            <div class="module-icon">📱</div>
+            <div class="module-title">空白原产地证书小程序</div>
+            <div class="module-desc">点击查看小程序二维码，扫码进入</div>
+            <!-- 跳转到新的二维码页面，target="_blank" 新标签页打开 -->
+            <a href="miniprogram.html" class="jump-btn" target="_blank">扫码进入</a>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>原产地证书小程序 - 扫码进入</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* 二维码容器 */
+        .qrcode-container {
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* 二维码图片样式 */
+        .qrcode-img {
+            width: 250px;
+            height: 250px;
+            margin: 0 auto 20px;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+
+        /* 提示文字 */
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .tip {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .phone-tip {
+            font-size: 14px;
+            color: #07c160;
+            padding: 10px;
+            background-color: #f0fdf4;
+            border-radius: 6px;
+            margin-top: 10px;
+        }
+
+        /* 返回按钮 */
+        .back-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 30px;
+            background-color: #2f54eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-btn:hover {
+            background-color: #1d39c4;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="qrcode-container">
+        <img src=" miniprogram.jpg" alt="原产地证书小程序二维码" class="qrcode-img">
+        <div class="title">原产地证书服务小程序</div>
+        <div class="tip">请扫描二维码，进入小程序办理业务</div>
+        <div class="phone-tip">💡 手机端可长按二维码选择「识别图中二维码」</div>
+        <!-- 返回原页面的按钮 -->
+        <a href="index.html" class="back-btn">返回主页面</a>
+    </div>
+</body>
+
+</html>
